@@ -1,0 +1,13 @@
+.task_container{
+    width: 100%;
+    min-height: 400px;
+    max-width: 400px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+    align-items: center;
+    background-color: var(--third-color);
+    border-radius: 1rem;
+    box-shadow: 1px 1px 10px 2px rgba(0,0,0,0.5);
+    padding: 1rem;
+}

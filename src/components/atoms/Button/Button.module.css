@@ -1,0 +1,24 @@
+.button{
+    width: max-content;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 1rem;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    transition: all 0.2s ease-in-out;
+    color: var(--text-color);
+    &:hover{
+        background-color: var(--secondary-color);
+        box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.3);
+    }
+    &:active{
+        /* transform: scale(1.1); */
+        background-color: var(--third-color);
+        box-shadow: inset 1px 1px 10px 1px rgba(0,0,0,0.3);
+    }
+}
+
+.button__border{
+    background-color:  transparent;
+    border: 1px solid var(--primary-color);
+}

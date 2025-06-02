@@ -1,0 +1,11 @@
+.form{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+    justify-content: center;
+    
+    input, button{
+        width: 100%;
+    }
+}

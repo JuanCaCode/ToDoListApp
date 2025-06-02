@@ -1,16 +1,29 @@
-/* 1. Use a more-intuitive box-sizing model */
+
+:root{
+    --bg-color: #191919;
+    --text-color:#f0f0f0;
+    --text-color-grey:#888888;
+    --primary-color:#b251df;
+    --secondary-color:#710ff2;
+    --third-color: #2b2b2b;
+    --green-color: #a5e767;
+    --secondary-color-opacity: #32135b;
+    --third-color-opacity: #6e6e6e33;
+    --warning-color: #ffb619;
+    --error-color: #e76767;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
-/* 2. Remove default margin */
-* {
-    margin: 0;
-}
-
-/* 3. Enable keyword animations */
 @media (prefers-reduced-motion: no-preference) {
     html {
         interpolate-size: allow-keywords;
@@ -18,13 +31,13 @@
 }
 
 body {
-    /* 4. Add accessible line-height */
     line-height: 1.5;
-    /* 5. Improve text rendering */
     -webkit-font-smoothing: antialiased;
+    background: linear-gradient(to bottom, var(--bg-color), var(--secondary-color-opacity)) ;
+    color: var(--text-color);
 }
 
-/* 6. Improve media defaults */
+
 img,
 picture,
 video,

@@ -1,0 +1,76 @@
+.tasks_list{
+    width: 100%;
+    ul{
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 1rem;
+        justify-content: center;
+        list-style: none;
+        li{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0.2rem;
+            border-radius: 5px 5px 0px 0px;
+            border-bottom: 1px solid var(--secondary-color);
+        }
+        li:nth-child(even){
+            background-color: var(--third-color-opacity);
+        }
+    }
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 0 !important;
+    .date{
+        display: flex;
+        align-items: center;
+        color: var(--text-color-grey);
+        font-size: 0.7rem;
+        gap: 4px;
+    }
+    .date_left{
+        width: max-content;
+        padding:0px 6px;
+        background-color: var(--primary-color);
+        border-radius: 4px;
+        font-size: 0.7rem;
+        color: var(--text-color);
+    }
+}
+
+.btn_container{
+    width: max-content;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    i{
+        width: 24px;
+        height: 24px;
+        display: grid;
+        place-items: center;
+        background-color: var(--primary-color);
+        border-radius: 50%;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    .play_btn{
+        background-color: var(--primary-color);
+    }
+    .complete_btn{
+        color: var(--third-color);
+        background-color: var(--green-color);
+    }
+    .denied_btn{
+        background-color: var(--error-color);
+    }
+    .denied_btn__active{
+        background-color: grey;
+    }
+}
